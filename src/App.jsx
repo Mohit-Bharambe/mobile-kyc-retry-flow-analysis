@@ -75,8 +75,12 @@ function App() {
       <nav className="sticky top-0 z-50 glass-panel border-b border-slate-200/60 backdrop-blur-md">
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-accent-cyan to-accent-blue flex items-center justify-center shadow-lg shadow-accent-cyan/15 border border-white/10">
-              <Cpu className="text-white w-5 h-5" />
+            <div className="w-10 h-10 rounded-xl bg-gradient-to-tr from-accent-cyan to-accent-blue flex items-center justify-center shadow-lg shadow-accent-cyan/15 border border-slate-200/30">
+              <svg className="w-5 h-5 text-white" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M24 4L8 10v12c0 10.4 6.8 19.3 16 22 9.2-2.7 16-11.6 16-22V10L24 4z" fill="currentColor" />
+                <rect x="18" y="14" width="12" height="20" rx="2.5" fill="#f8fafc" />
+                <rect x="20" y="17" width="8" height="13" rx="0.5" fill="#2563eb" />
+              </svg>
             </div>
             <div>
               <span className="font-display font-bold text-lg tracking-tight text-slate-900">Amazon Pay Later</span>
