@@ -22,7 +22,7 @@ function App() {
   const simSteps = [
     { title: "Tap 'Reattempt KYC'", desc: "User triggers tap event in Amazon App WebView", icon: Smartphone, color: "text-accent-cyan" },
     { title: "App Cache Validation", desc: "Native shell parses cached verification headers", icon: Database, color: "text-accent-blue" },
-    { title: "Mismatched Transition Code", desc: "API response returns invalid stale token state", icon: Server, color: "text-accent-purple" },
+    { title: "Stale Session Flag", desc: "API response returns invalid stale session token status", icon: Server, color: "text-accent-purple" },
     { title: "NavGuard Interceptor", desc: "Route protection guard triggers block due to error token", icon: ShieldAlert, color: "text-accent-red" },
     { title: "Onboarding State Reload", desc: "App reloads identical landing route, locking flow", icon: RefreshCw, color: "text-accent-red animate-spin" }
   ];
@@ -123,7 +123,7 @@ function App() {
               A small retry-state issue can <span className="text-gradient-cyan">completely block</span> mobile fintech onboarding.
             </h1>
             
-            <p className="text-lg md:text-xl text-slate-600 font-light max-w-2xl leading-relaxed">
+            <p className="text-lg md:text-xl text-slate-750 font-normal max-w-2xl leading-relaxed">
               Analyzing an infinite retry-loop and session-state issue observed during Amazon Pay Later Video KYC inside the Amazon mobile application. An engineering evaluation of mobile navigation guards and stale cache invalidation.
             </p>
 
@@ -221,7 +221,7 @@ function App() {
           <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
             <span className="text-accent-cyan text-xs font-semibold uppercase tracking-widest block font-display">UX Friction Report</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient text-slate-900">The Real Scenario</h2>
-            <p className="text-slate-500 font-light text-lg">
+            <p className="text-slate-700 font-normal text-lg">
               Tracing how an automated security flag completely locked onboarding progression inside the Amazon mobile app.
             </p>
           </div>
@@ -311,7 +311,7 @@ function App() {
           <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
             <span className="text-accent-cyan text-xs font-semibold uppercase tracking-widest block font-display">Flow Analysis</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient text-slate-900">Observed Mobile Retry-State Loop</h2>
-            <p className="text-slate-500 font-light text-lg">
+            <p className="text-slate-700 font-normal text-lg">
               A comprehensive system analysis mapping the interactive loop of stale mobile verification sessions.
             </p>
           </div>
@@ -385,7 +385,7 @@ function App() {
                         </div>
                         <h4 className="text-slate-800 font-semibold text-base font-display">State Transferred</h4>
                         <p className="text-xs text-slate-500 px-4">
-                          Evaluating token transitions inside routing guards...
+                          Evaluating session token handling inside routing guards...
                         </p>
                       </motion.div>
                     )}
@@ -441,7 +441,7 @@ function App() {
           <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
             <span className="text-accent-cyan text-xs font-semibold uppercase tracking-widest block font-display">Onboarding Breakdown</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient text-slate-900">Possible Technical Causes</h2>
-            <p className="text-slate-500 font-light text-lg">
+            <p className="text-slate-700 font-normal text-lg">
               Breaking down the root software infrastructure variables causing the mobile route-guard locks.
             </p>
           </div>
@@ -510,7 +510,7 @@ function App() {
                 <GitPullRequest className="w-6 h-6" />
               </div>
               <div className="space-y-3">
-                <h3 className="text-xl font-semibold text-slate-900 font-display">Incomplete Recovery Architecture</h3>
+                <h3 className="text-xl font-semibold text-slate-900 font-display">Incomplete Recovery Routines</h3>
                 <p className="text-slate-500 text-sm leading-relaxed">
                   No fallback recovery logic was integrated inside route catch statements, denying the client-side router an escape path to clear active loop configurations.
                 </p>
@@ -521,8 +521,8 @@ function App() {
             <div className="p-8 rounded-3xl bg-gradient-to-tr from-accent-cyan/5 to-accent-blue/5 border border-accent-cyan/20 flex flex-col gap-6 relative overflow-hidden justify-center text-left shadow-md">
               <div className="space-y-2">
                 <Flame className="text-accent-cyan w-8 h-8 mb-2" />
-                <h3 className="text-xl font-semibold text-slate-900 font-display">Architectural Takeaway</h3>
-                <p className="text-slate-600 text-sm leading-relaxed">
+                <h3 className="text-xl font-semibold text-slate-900 font-display">Engineering Takeaway</h3>
+                <p className="text-slate-650 font-normal text-sm leading-relaxed">
                   Mobile onboarding security requires clear, automated cache invalidation to keep defensive route guards from trapping valid users.
                 </p>
               </div>
@@ -537,8 +537,8 @@ function App() {
           <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
             <span className="text-accent-cyan text-xs font-semibold uppercase tracking-widest block font-display">Code Audit & Analysis</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient text-slate-900">Mobile Frontend Perspective</h2>
-            <p className="text-slate-500 font-light text-lg">
-              An engineering deep-dive on mobile state synchronization, navigation intercepts, and token lifecycles.
+            <p className="text-slate-650 font-normal text-lg">
+              An engineering evaluation of mobile session state sync, route intercepts, and token cleanup.
             </p>
           </div>
 
@@ -647,7 +647,7 @@ async function handleKycReattempt(navigation) {
           <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
             <span className="text-accent-cyan text-xs font-semibold uppercase tracking-widest block font-display">Accessibility & Usability</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient text-slate-900">UX and Accessibility Concerns</h2>
-            <p className="text-slate-500 font-light text-lg">
+            <p className="text-slate-700 font-normal text-lg">
               Even secure, technically functional software stacks fail in real-world usability when they neglect human variables.
             </p>
           </div>
@@ -722,7 +722,7 @@ async function handleKycReattempt(navigation) {
           <div className="text-center max-w-3xl mx-auto mb-16 flex flex-col gap-4">
             <span className="text-accent-cyan text-xs font-semibold uppercase tracking-widest block font-display">System Upgrades</span>
             <h2 className="text-4xl md:text-5xl font-display font-bold text-gradient text-slate-900">How I Would Improve The Flow</h2>
-            <p className="text-slate-500 font-light text-lg">
+            <p className="text-slate-700 font-normal text-lg">
               Comparing structural layouts and recovery loops before and after system modernization.
             </p>
           </div>
@@ -853,7 +853,7 @@ async function handleKycReattempt(navigation) {
 
           <h2 className="text-4xl md:text-5xl font-display font-bold text-slate-900 font-display">Engineering Takeaway</h2>
 
-          <p className="text-xl md:text-2xl text-slate-700 font-light leading-relaxed italic max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-slate-800 font-normal leading-relaxed italic max-w-3xl mx-auto">
             “Small onboarding friction in fintech mobile apps can significantly impact trust, accessibility, and completion rates.”
           </p>
 
@@ -869,13 +869,18 @@ async function handleKycReattempt(navigation) {
 
       {/* Footer */}
       <footer className="py-12 px-6 border-t border-slate-200 text-center text-xs text-slate-550 relative z-10 bg-slate-100">
-        <div className="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center gap-6">
-          <p>© 2026 Amazon Pay Later Mobile Video KYC Case Study. Suitable for engineering portfolio showcase.</p>
-          <div className="flex gap-6 text-slate-500">
-            <a href="#scenario" className="hover:text-accent-cyan transition-colors">Scenario</a>
-            <a href="#causes" className="hover:text-accent-cyan transition-colors">Technical Causes</a>
-            <a href="#proposed" className="hover:text-accent-cyan transition-colors">Proposed Flow</a>
+        <div className="max-w-7xl mx-auto flex flex-col gap-6">
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-6">
+            <p className="font-semibold text-slate-700">© 2026 Amazon Pay Later Mobile Video KYC Case Study. Suitable for engineering portfolio showcase.</p>
+            <div className="flex gap-6 text-slate-600 font-medium">
+              <a href="#scenario" className="hover:text-accent-cyan transition-colors">Scenario</a>
+              <a href="#causes" className="hover:text-accent-cyan transition-colors">Technical Causes</a>
+              <a href="#proposed" className="hover:text-accent-cyan transition-colors">Proposed Flow</a>
+            </div>
           </div>
+          <p className="text-[11px] text-slate-500 leading-relaxed text-left sm:text-center border-t border-slate-200/60 pt-4">
+            Disclaimer: This is an independent frontend/product engineering case study created for educational and analytical purposes based on personal user observations. It is not affiliated with or endorsed by Amazon.
+          </p>
         </div>
       </footer>
     </div>
